@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cclk-gatepass/static/css/main.e6e7e7cf.chunk.css",
-    "main.js": "/cclk-gatepass/static/js/main.29d574ba.chunk.js",
-    "main.js.map": "/cclk-gatepass/static/js/main.29d574ba.chunk.js.map",
+    "main.js": "/cclk-gatepass/static/js/main.a2272ecb.chunk.js",
+    "main.js.map": "/cclk-gatepass/static/js/main.a2272ecb.chunk.js.map",
     "runtime-main.js": "/cclk-gatepass/static/js/runtime-main.cf769d89.js",
     "runtime-main.js.map": "/cclk-gatepass/static/js/runtime-main.cf769d89.js.map",
     "static/css/2.438752f9.chunk.css": "/cclk-gatepass/static/css/2.438752f9.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.438752f9.chunk.css",
     "static/js/2.f8127e25.chunk.js",
     "static/css/main.e6e7e7cf.chunk.css",
-    "static/js/main.29d574ba.chunk.js"
+    "static/js/main.a2272ecb.chunk.js"
   ]
 }
