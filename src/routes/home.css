@@ -1,0 +1,21 @@
+input[textalign=right] {
+    text-align: right;
+    padding-right: 6px !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.am-drawer-sidebar {
+    width: 80%;
+    background-color: white;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
