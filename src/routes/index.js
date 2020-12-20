@@ -5,7 +5,7 @@ import LoginRoute from "./login";
 import HomeRoute from "./home";
 import ViewVehicleRoute from "./viewVehicle";
 
-const Router = () => (<BrowserRouter>
+const Router = () => (<BrowserRouter basename={process.env.PUBLIC_URL}>
   <Switch>
     <Route path="/login">
       <LoginRoute />
