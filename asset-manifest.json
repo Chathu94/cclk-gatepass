@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cclk-gatepass/static/css/main.e6e7e7cf.chunk.css",
+    "main.js": "/cclk-gatepass/static/js/main.29d574ba.chunk.js",
+    "main.js.map": "/cclk-gatepass/static/js/main.29d574ba.chunk.js.map",
+    "runtime-main.js": "/cclk-gatepass/static/js/runtime-main.cf769d89.js",
+    "runtime-main.js.map": "/cclk-gatepass/static/js/runtime-main.cf769d89.js.map",
+    "static/css/2.438752f9.chunk.css": "/cclk-gatepass/static/css/2.438752f9.chunk.css",
+    "static/js/2.f8127e25.chunk.js": "/cclk-gatepass/static/js/2.f8127e25.chunk.js",
+    "static/js/2.f8127e25.chunk.js.map": "/cclk-gatepass/static/js/2.f8127e25.chunk.js.map",
+    "static/js/3.da9773a7.chunk.js": "/cclk-gatepass/static/js/3.da9773a7.chunk.js",
+    "static/js/3.da9773a7.chunk.js.map": "/cclk-gatepass/static/js/3.da9773a7.chunk.js.map",
+    "index.html": "/cclk-gatepass/index.html",
+    "static/css/2.438752f9.chunk.css.map": "/cclk-gatepass/static/css/2.438752f9.chunk.css.map",
+    "static/css/main.e6e7e7cf.chunk.css.map": "/cclk-gatepass/static/css/main.e6e7e7cf.chunk.css.map",
+    "static/js/2.f8127e25.chunk.js.LICENSE.txt": "/cclk-gatepass/static/js/2.f8127e25.chunk.js.LICENSE.txt",
+    "static/media/commercial-credit-logo.49a4ea8a.png": "/cclk-gatepass/static/media/commercial-credit-logo.49a4ea8a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf769d89.js",
+    "static/css/2.438752f9.chunk.css",
+    "static/js/2.f8127e25.chunk.js",
+    "static/css/main.e6e7e7cf.chunk.css",
+    "static/js/main.29d574ba.chunk.js"
+  ]
+}
