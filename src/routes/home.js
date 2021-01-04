@@ -19,6 +19,12 @@ const sidebar = (<div>
   <WhiteSpace size="lg" />
   <List>
     <Link to="/login">
+      <Link to="/checkInValidate">
+        <List.Item
+          thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
+          multipleLine
+        >Check In</List.Item>
+      </Link>
       <List.Item
         thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
         multipleLine

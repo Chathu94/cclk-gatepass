@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9be5620-cfa7-4dc0-a39e-de4641571542" name="Default Changelist" comment="Github pages config">
+    <list default="true" id="b9be5620-cfa7-4dc0-a39e-de4641571542" name="Default Changelist" comment="Github pages issues">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/viewVehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/viewVehicle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608278166561</updated>
-      <workItem from="1608278168306" duration="21408000" />
+      <workItem from="1608278168306" duration="21737000" />
+      <workItem from="1609741863935" duration="9256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Changes">
       <created>1608445894504</created>
@@ -96,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608446062941</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Github pages issues">
+      <created>1608447432225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608447432226</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,10 +121,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Changes" />
     <MESSAGE value="Github pages config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Github pages config" />
+    <MESSAGE value="Github pages issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Github pages issues" />
   </component>
 </project>

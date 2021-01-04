@@ -1,0 +1,14 @@
+.grid-button {
+    width: 100%;
+    height: 100%;
+}
+
+.am-list-extra {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+html:not([data-scale]) .am-grid.am-grid-line .am-flexbox::after {
+    bottom: 1px !important;
+}

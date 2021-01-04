@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, NavBar, Icon, WhiteSpace, Button, Flex, WingBlank } from 'antd-mobile';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const Item = List.Item;
 
@@ -26,7 +26,9 @@ const ViewVehicleRoute = () => {
     <WingBlank>
       <Flex>
         <Flex.Item>
-          <Button type="primary">Check In</Button>
+          <Link to="/checkInValidate">
+            <Button type="primary">Check In</Button>
+          </Link>
         </Flex.Item>
         <Flex.Item>
           <Button type="warning">Check Out</Button>
