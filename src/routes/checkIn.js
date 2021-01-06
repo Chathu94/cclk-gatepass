@@ -1,5 +1,17 @@
 import React, { useState, useCallback } from 'react';
-import { NavBar, Icon, SegmentedControl, WingBlank, WhiteSpace, List, Modal, Checkbox, TextareaItem, ImagePicker } from 'antd-mobile';
+import {
+  NavBar,
+  Icon,
+  SegmentedControl,
+  WingBlank,
+  WhiteSpace,
+  List,
+  Modal,
+  TextareaItem,
+  ImagePicker,
+  Button,
+  Picker
+} from 'antd-mobile';
 import { useHistory } from "react-router-dom";
 import './checkIn.css';
 
@@ -126,6 +138,7 @@ const CheckInVehicleRoute = () => {
   const [activeItem, setActiveItem] = useState(undefined);
   const [activeSet, setActiveSet] = useState(Lights);
   const [activeSetIndex, setActiveSetIndex] = useState(0);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const onCloseModal = useCallback(() => {
     setAllSets(cd => ({ ...cd, [SegmentArray[activeSetIndex]]: { ...cd[SegmentArray[activeSetIndex]], [activeItem?.name]: activeItem?.data } }))
@@ -137,6 +150,9 @@ const CheckInVehicleRoute = () => {
       mode="light"
       onLeftClick={() => history.goBack()}
       icon={<Icon type="left" />}
+      rightContent={[
+        <Icon onClick={() => setShowConfirm(true)} key="1" type="check" />,
+      ]}
     >Check In CAB 2587</NavBar>
     <WingBlank>
       <SegmentedControl selectedIndex={activeSetIndex} values={SegmentArray} onValueChange={v => {
@@ -167,9 +183,9 @@ const CheckInVehicleRoute = () => {
         footer={[{ text: 'Ok', onPress: onCloseModal }]}
       >
         <List>
-          <Checkbox.CheckboxItem checked={activeItem?.data?.checked} onChange={(e) => setActiveItem(i => ({ ...i, data: { ...i.data, checked: e.target.checked } }))}>
-            Checked
-          </Checkbox.CheckboxItem>
+          <Picker onOk={(v) => setActiveItem(i => ({ ...i, data: { ...i.data, checked: v } }))} okText="OK" dismissText="Close" extra={!activeItem?.data?.checked ? "Select" : activeItem?.data?.checked} data={[{ label: 'Yes', value: 'Yes' }, { label: 'No', value: 'No' }]} cols={1}>
+            <List.Item arrow="horizontal">Available</List.Item>
+          </Picker>
           <TextareaItem
             placeholder="Remarks"
             type="text"
@@ -184,6 +200,21 @@ const CheckInVehicleRoute = () => {
               files={activeItem?.data?.images}
               onChange={images => setActiveItem(i => ({ ...i, data: { ...i.data, images } }))}
             />
+          </List.Item>
+        </List>
+      </Modal>
+      <Modal
+        popup
+        visible={showConfirm}
+        onClose={() => setShowConfirm(false)}
+        animationType="slide-up"
+      >
+        <List renderHeader={() => <div>Please confirm bellow details</div>}>
+          <List.Item extra="K S P Saman">Customer</List.Item>
+          <List.Item extra="Kandy">Branch</List.Item>
+          <List.Item extra={new Date().toDateString()}>Date/Time</List.Item>
+          <List.Item>
+            <Button type="primary" onClick={() => setShowConfirm(false)}>Confirm</Button>
           </List.Item>
         </List>
       </Modal>

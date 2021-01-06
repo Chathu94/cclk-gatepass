@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9be5620-cfa7-4dc0-a39e-de4641571542" name="Default Changelist" comment="Github pages issues">
+    <list default="true" id="b9be5620-cfa7-4dc0-a39e-de4641571542" name="Default Changelist" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/checkIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/checkInValidate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkInValidate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/viewVehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/viewVehicle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +58,18 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -72,6 +82,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +97,10 @@
       <option name="presentableId" value="Default" />
       <updated>1608278166561</updated>
       <workItem from="1608278168306" duration="21737000" />
-      <workItem from="1609741863935" duration="9256000" />
+      <workItem from="1609741863935" duration="9705000" />
+      <workItem from="1609827650916" duration="11000" />
+      <workItem from="1609910769923" duration="459000" />
+      <workItem from="1609919829872" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Changes">
       <created>1608445894504</created>
@@ -105,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608447432226</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes">
+      <created>1609757849013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609757849013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +152,7 @@
     <MESSAGE value="Initial Changes" />
     <MESSAGE value="Github pages config" />
     <MESSAGE value="Github pages issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Github pages issues" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>

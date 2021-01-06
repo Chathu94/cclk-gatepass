@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { List, NavBar, Icon, Button, InputItem, Drawer, WingBlank, Flex, WhiteSpace } from 'antd-mobile';
+import { List, NavBar, Icon, Button, InputItem, Drawer, WingBlank, Flex, WhiteSpace, Modal } from 'antd-mobile';
 import { useHistory, Link } from "react-router-dom";
 import './home.css';
 
+const prompt = Modal.prompt;
 const Item = List.Item;
 const Brief = Item.Brief;
 
@@ -18,13 +19,30 @@ const sidebar = (<div>
   </WingBlank>
   <WhiteSpace size="lg" />
   <List>
+    <List.Item
+      onClick={() => prompt('Check Out Vehicle', 'please enter gatepass number',
+        [
+          {
+            text: 'Close',
+            onPress: () => {},
+          },
+          {
+            text: 'Print',
+            onPress: value => new Promise((resolve, reject) => {
+
+            }),
+          },
+        ], 'default', null, ['gatepass number'])}
+      thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
+      multipleLine
+    >Check Out</List.Item>
+    <Link to="/checkInValidate">
+      <List.Item
+        thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
+        multipleLine
+      >Check In</List.Item>
+    </Link>
     <Link to="/login">
-      <Link to="/checkInValidate">
-        <List.Item
-          thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
-          multipleLine
-        >Check In</List.Item>
-      </Link>
       <List.Item
         thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
         multipleLine
@@ -50,7 +68,7 @@ const HomeRoute = () => {
       ]}
       icon={<Icon type="ellipsis" />}
       onLeftClick={() => setShowDrawer(cs => !cs)}
-    >CCL GatePass {showDrawer ? "TR": "FL"}</NavBar>
+    >CCL GatePass</NavBar>
     <div className="relative">
       <Drawer
         className="main-drawer"
